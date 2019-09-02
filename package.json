@@ -1,0 +1,42 @@
+{
+  "name": "@reason-react-native/slider",
+  "version": "0.0.1",
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "broerjuang (https://github.com/broerjuang)",
+  "repository": "https://github.com/reason-react-native/slider.git",
+  "license": "MIT",
+  "keywords": [
+    "reason",
+    "reasonml",
+    "bucklescript",
+    "react-native",
+    "react-native-slider",
+    "slider"
+  ],
+  "files": [
+    "*",
+    "!.DS_Store",
+    "!**/*.bs.js",
+    "!.merlin",
+    "!lib/bs",
+    "!lib/ocaml"
+  ],
+  "scripts": {
+    "start": "bsb -make-world -w",
+    "build": "bsb -make-world",
+    "clean": "bsb -clean-world",
+    "test": "bsb -clean-world -make-world"
+  },
+  "devDependencies": {
+    "@react-native-community/slider": "^2.0.0",
+    "bs-platform": "^5.0.4",
+    "reason-react": ">=0.7.0",
+    "reason-react-native": "^0.60.0"
+  },
+  "peerDependencies": {
+    "@react-native-community/slider": "^2.0.0",
+    "reason-react": ">=0.7.0"
+  }
+}
