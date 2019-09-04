@@ -3,7 +3,7 @@ external make:
   (
     ~style: ReactNative.Style.t=?,
     ~value: int=?,
-    ~step: int,
+    ~step: int=?,
     ~minimumValue: int=?,
     ~maximumValue: int=?,
     ~minimumTrackTintColor: string=?,
