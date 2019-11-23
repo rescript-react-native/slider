@@ -14,7 +14,7 @@ external make:
     ~onValueChange: int => unit=?,
     ~testID: string=?,
     ~children: React.element=?,
-    //   IOS Props
+    // iOS Props
     ~maximumTrackImage: ReactNative.Image.Source.t=?,
     ~minimumTrackImage: ReactNative.Image.Source.t=?,
     ~thumbImage: ReactNative.Image.Source.t=?,
