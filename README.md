@@ -16,7 +16,7 @@ Exposed as `ReactNativeSomething` module.
 ## Installation
 
 When
-[`@react-native-community/slider`](`https://github.com/react-native-community/react-native-slider`)
+[`@react-native-community/slider`](https://github.com/react-native-community/react-native-slider)
 is properly installed & configured by following their installation instructions,
 you can install the bindings:
 
