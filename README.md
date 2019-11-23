@@ -42,6 +42,56 @@ yarn add @reason-react-native/slider
 }
 ```
 
+## Usage
+
+```re
+ReactNativeSlider.make(
+  ~style: ReactNative.Style.t=?,
+  ~value: int=?,
+  ~step: int=?,
+  ~minimumValue: int=?,
+  ~maximumValue: int=?,
+  ~minimumTrackTintColor: string=?,
+  ~maximumTrackTintColor: string=?,
+  ~disabled: bool=?,
+  ~onSlidingStart: int => unit=?,
+  ~onSlidingComplete: int => unit=?,
+  ~onValueChange: int => unit=?,
+  ~testID: string=?,
+  ~children: React.element=?,
+  // iOS Props
+  ~maximumTrackImage: ReactNative.Image.Source.t=?,
+  ~minimumTrackImage: ReactNative.Image.Source.t=?,
+  ~thumbImage: ReactNative.Image.Source.t=?,
+  ~trackImage: ReactNative.Image.Source.t=?,
+  ~inverted: bool=?,
+  // Android
+  ~thumbTintColor: string=?
+
+  // ... And all <View> props
+)
+```
+
+### Example
+
+```re
+<ReactNativeSlider
+  style={
+    ReactNative.Style.(
+      style(
+        ~width=200.->dp,
+        ~height=40.->dp,
+        ()
+      )
+    )
+  }
+  minimumValue={0}
+  maximumValue={1}
+  minimumTrackTintColor="#FFFFFF"
+  maximumTrackTintColor="#000000"
+/>
+```
+
 ---
 
 ## Changelog
