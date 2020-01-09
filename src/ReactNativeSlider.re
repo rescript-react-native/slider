@@ -2,16 +2,16 @@
 external make:
   (
     ~style: ReactNative.Style.t=?,
-    ~value: int=?,
-    ~step: int=?,
-    ~minimumValue: int=?,
-    ~maximumValue: int=?,
+    ~value: float=?,
+    ~step: float=?,
+    ~minimumValue: float=?,
+    ~maximumValue: float=?,
     ~minimumTrackTintColor: string=?,
     ~maximumTrackTintColor: string=?,
     ~disabled: bool=?,
-    ~onSlidingStart: int => unit=?,
-    ~onSlidingComplete: int => unit=?,
-    ~onValueChange: int => unit=?,
+    ~onSlidingStart: float => unit=?,
+    ~onSlidingComplete: float => unit=?,
+    ~onValueChange: float => unit=?,
     ~testID: string=?,
     ~children: React.element=?,
     // iOS Props
