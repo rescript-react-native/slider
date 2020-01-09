@@ -1,4 +1,4 @@
-[@bs.module] [@react.component]
+[@bs.module "@react-native-community/slider"] [@react.component]
 external make:
   (
     ~style: ReactNative.Style.t=?,
@@ -71,4 +71,4 @@ external make:
     ~onMagicTap: unit => unit=?
   ) =>
   React.element =
-  "@react-native-community/slider";
+  "default";
