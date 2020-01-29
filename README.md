@@ -44,7 +44,7 @@ yarn add @reason-react-native/slider
 
 ## Usage
 
-```re
+```reason
 ReactNativeSlider.make(
   ~style: ReactNative.Style.t=?,
   ~value: int=?,
@@ -74,7 +74,7 @@ ReactNativeSlider.make(
 
 ### Example
 
-```re
+```reason
 <ReactNativeSlider
   style={
     ReactNative.Style.(
