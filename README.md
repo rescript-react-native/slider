@@ -47,16 +47,16 @@ yarn add @reason-react-native/slider
 ```reason
 ReactNativeSlider.make(
   ~style: ReactNative.Style.t=?,
-  ~value: int=?,
-  ~step: int=?,
-  ~minimumValue: int=?,
-  ~maximumValue: int=?,
+  ~value: float=?,
+  ~step: float=?,
+  ~minimumValue: float=?,
+  ~maximumValue: float=?,
   ~minimumTrackTintColor: string=?,
   ~maximumTrackTintColor: string=?,
   ~disabled: bool=?,
-  ~onSlidingStart: int => unit=?,
-  ~onSlidingComplete: int => unit=?,
-  ~onValueChange: int => unit=?,
+  ~onSlidingStart: float => unit=?,
+  ~onSlidingComplete: float => unit=?,
+  ~onValueChange: float => unit=?,
   ~testID: string=?,
   ~children: React.element=?,
   // iOS Props
@@ -85,8 +85,8 @@ ReactNativeSlider.make(
       )
     )
   }
-  minimumValue={0}
-  maximumValue={1}
+  minimumValue={0.}
+  maximumValue={1.}
   minimumTrackTintColor="#FFFFFF"
   maximumTrackTintColor="#000000"
 />
