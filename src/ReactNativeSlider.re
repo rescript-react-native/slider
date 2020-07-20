@@ -1,3 +1,8 @@
+open ReactNative;
+
+include NativeElement;
+type edgeInsets = View.edgeInsets;
+
 [@bs.module "@react-native-community/slider"] [@react.component]
 external make:
   (
@@ -22,7 +27,7 @@ external make:
     ~inverted: bool=?,
     // Android
     ~thumbTintColor: string=?,
-    // View Props: https://github.com/reasonml-community/reason-react-native/blob/master/reason-react-native/src/components/View.re#L14-L60
+    // View props
     ~accessibilityComponentType: [@bs.string] [
                                    | `none
                                    | `button
@@ -47,14 +52,25 @@ external make:
                           | `header
                           | `summary
                           | `imagebutton
+                          | `article
+                          | `banner
+                          | `complementary
+                          | `contentinfo
+                          | `form
+                          | `list
+                          | `listitem
+                          | `main
+                          | `navigation
+                          | `region
                         ]
                           =?,
-    ~accessibilityStates: array(ReactNative.AccessibilityState.t)=?,
-    ~accessibilityTraits: array(ReactNative.AccessibilityTrait.t)=?,
+    ~accessibilityState: Accessibility.state=?,
+    ~accessibilityTraits: array(AccessibilityTrait.t)=?,
+    ~accessibilityValue: Accessibility.value=?,
     ~accessibilityViewIsModal: bool=?,
     ~accessible: bool=?,
     ~collapsable: bool=?,
-    ~hitSlop: ReactNative.View.edgeInsets=?,
+    ~hitSlop: edgeInsets=?,
     ~importantForAccessibility: [@bs.string] [
                                   | `auto
                                   | `yes
@@ -67,8 +83,42 @@ external make:
     ~needsOffscreenAlphaCompositing: bool=?,
     ~onAccessibilityEscape: unit => unit=?,
     ~onAccessibilityTap: unit => unit=?,
-    ~onLayout: ReactNative.Event.layoutEvent => unit=?,
-    ~onMagicTap: unit => unit=?
+    ~onLayout: Event.layoutEvent => unit=?,
+    ~onMagicTap: unit => unit=?,
+    // Gesture Responder props
+    ~onMoveShouldSetResponder: Event.pressEvent => bool=?,
+    ~onMoveShouldSetResponderCapture: Event.pressEvent => bool=?,
+    ~onResponderEnd: Event.pressEvent => unit=?,
+    ~onResponderGrant: Event.pressEvent => unit=?,
+    ~onResponderMove: Event.pressEvent => unit=?,
+    ~onResponderReject: Event.pressEvent => unit=?,
+    ~onResponderRelease: Event.pressEvent => unit=?,
+    ~onResponderStart: Event.pressEvent => unit=?,
+    ~onResponderTerminate: Event.pressEvent => unit=?,
+    ~onResponderTerminationRequest: Event.pressEvent => bool=?,
+    ~onStartShouldSetResponder: Event.pressEvent => bool=?,
+    ~onStartShouldSetResponderCapture: Event.pressEvent => bool=?,
+    ~pointerEvents: [@bs.string] [
+                      | `auto
+                      | `none
+                      | [@bs.as "box-none"] `boxNone
+                      | [@bs.as "box-only"] `boxOnly
+                    ]
+                      =?,
+    ~removeClippedSubviews: bool=?,
+    ~renderToHardwareTextureAndroid: bool=?,
+    ~shouldRasterizeIOS: bool=?,
+    ~style: Style.t=?,
+    ~testID: string=?,
+    ~children: React.element=?,
+    // React Native Web Props
+    ~onMouseDown: ReactEvent.Mouse.t => unit=?,
+    ~onMouseEnter: ReactEvent.Mouse.t => unit=?,
+    ~onMouseLeave: ReactEvent.Mouse.t => unit=?,
+    ~onMouseMove: ReactEvent.Mouse.t => unit=?,
+    ~onMouseOver: ReactEvent.Mouse.t => unit=?,
+    ~onMouseOut: ReactEvent.Mouse.t => unit=?,
+    ~onMouseUp: ReactEvent.Mouse.t => unit=?
   ) =>
   React.element =
   "default";
