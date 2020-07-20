@@ -1,6 +1,6 @@
 # Changelog of `@reason-react-native/slider`
 
-## 3.0.0 - 2020-06-20
+## 3.0.0 - 2020-07-20
 
 - Web support, see
   <https://github.com/react-native-community/react-native-slider/releases>
