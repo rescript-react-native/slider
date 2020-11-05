@@ -1,7 +1,6 @@
 open ReactNative;
 
 include NativeElement;
-type edgeInsets = View.edgeInsets;
 
 [@bs.module "@react-native-community/slider"] [@react.component]
 external make:
@@ -27,7 +26,7 @@ external make:
     ~inverted: bool=?,
     // Android
     ~thumbTintColor: string=?,
-    // View props
+    // View props 0.62.0
     ~accessibilityComponentType: [@bs.string] [
                                    | `none
                                    | `button
@@ -70,7 +69,7 @@ external make:
     ~accessibilityViewIsModal: bool=?,
     ~accessible: bool=?,
     ~collapsable: bool=?,
-    ~hitSlop: edgeInsets=?,
+    ~hitSlop: View.edgeInsets=?,
     ~importantForAccessibility: [@bs.string] [
                                   | `auto
                                   | `yes
