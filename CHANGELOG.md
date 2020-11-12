@@ -1,5 +1,10 @@
 # Changelog of `@reason-react-native/slider`
 
+## 3.0.0-0.63 - 2020-11-12
+
+- rescript 8.2
+- reason-react-native 0.63
+
 ## 3.0.0 - 2020-07-20
 
 - Web support, see
