@@ -8,7 +8,7 @@
 ## 3.0.0 - 2020-07-20
 
 - Web support, see
-  <https://github.com/react-native-community/react-native-slider/releases>
+  <https://github.com/callstack/react-native-slider/releases>
 - reason-react-native 0.62
 - bs-platform 7.3
 

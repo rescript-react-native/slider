@@ -5,9 +5,9 @@
 [![Chat](https://img.shields.io/discord/235176658175262720.svg?logo=discord&colorb=blue)](https://reason-react-native.github.io/discord/)
 
 [ReScript](https://rescript-lang.org) / [Reason](https://reasonml.github.io) bindings for
-[`@react-native-community/slider`](https://github.com/react-native-community/react-native-slider).
+[`@react-native-community/slider`](https://github.com/callstack/react-native-slider).
 
-Exposed as `ReactNativeSomething` module.
+Exposed as `ReactNativeSlider` module.
 
 `@reason-react-native/slider` X.y.\* means it's compatible with
 `@react-native-community/slider` X.y.\*
@@ -15,7 +15,7 @@ Exposed as `ReactNativeSomething` module.
 ## Installation
 
 When
-[`@react-native-community/slider`](https://github.com/react-native-community/react-native-slider)
+[`@react-native-community/slider`](https://github.com/callstack/react-native-slider)
 is properly installed & configured by following their installation instructions,
 you can install the bindings:
 
