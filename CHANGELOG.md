@@ -1,5 +1,9 @@
 # Changelog of `@rescript-react-native/slider`
 
+## 3.0.2 - 2021-05-03
+
+ReScript
+
 ## 3.0.1-0.63 - 2020-11-18
 
 Fix npm description
